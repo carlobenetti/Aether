@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "MinecraftFont";
+  src: url(./fonts/Minecraft.ttf);
+}
+
+body {
+  background: url(./assets/bg.jpg) no-repeat top center/cover;
+}
+
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ----------------------------------------------  BLOCO 1 ------------------------------------------------- */
+.bloco1 {
+  width: 1510px;
+  height: 200px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-logo {
+  width: 514px;
+  height: 120px;
+  align-self: center;
+  margin-left: 5%;
+}
+
+.buttom-world {
+  width: 56px;
+  height: 56px;
+  margin: 1% 1% 0 1%;
+}
+
+/* ----------------------------------------------  BLOCO 2 ------------------------------------------------- */
+.bloco2 {
+  width: 1410px;
+  height: 340px;
+  flex: 1;
+}
+
+.bloco2 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-image {
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-30%);
+}
+
+.menu-item {
+  list-style-type: none;
+  margin: 1%;
+  font-family: "MinecraftFont";
+  text-shadow: 5px 3px 2px #000000;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-item:hover {
+  transform: translateX(30px);
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  margin: 3%;
+  padding: 3%;
+  font-size: 30px;
+}
+
+/* ----------------------------------------------  BLOCO 3 ------------------------------------------------- */
+.bloco3 {
+  width: 1510px;
+  height: 188px;
+  flex: 1;
+  justify-content: space-between;
+
+  font-family: "MinecraftFont";
+  font-size: 140%;
+  display: flex;
+}
+
+.gameInformations {
+  width: 400px;
+  height: 100 px;
+  color: white;
+  margin-top: 4%;
+  text-shadow: 5px 3px 2px #000000;
+}
+
+.copyright {
+  color: white;
+  width: 550px;
+  height: 100 px;
+  margin: 7% 1% 0 1%;
+  text-shadow: 5px 3px 2px #000000;
+}
